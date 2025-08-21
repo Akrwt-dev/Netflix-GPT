@@ -1,20 +1,29 @@
 - Header
 - Routing of app
 - Login up form 
-- sign up form 
-- form validartion
+- Sign up form 
+- Form Validartion
 - useRef hook 
-- firebase setup
-- deploying our app to production 
-- creat signupuser account 
-- impliment sign in user api 
-- created redux store with userSlice
+- Firebase setup
+- Deploying our app to production 
+- Creat signupuser account 
+- Impliment Sign In user api 
+- Created redux store with userSlice
 - Impliment sign out
 - Update profile
 - BugFix - Sign up user displayName and profilr pic update
 - BugFix - if the user is not logged in redirect / browse to Login Page and vice-versa
 - Unsubscribe to the onAuthStateChanged callback
-
+- Add hardcoded valuesto the constants file
+- Regiter TMDB API & create an app & get access tocken
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fatch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Youtube video and make it autoplay and mute
+- Tailwind Classes to make main Conatiner look awesome
 
 
 
