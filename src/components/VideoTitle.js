@@ -1,6 +1,8 @@
 const VideoTitle = () =>{
     return(
-        <div>VideoTitle</div>
+        <div>
+            
+        </div>
     )
 }
 export default VideoTitle;
