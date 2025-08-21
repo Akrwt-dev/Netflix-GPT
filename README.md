@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+- Header
+- Routing of app
+- Login up form 
+- sign up form 
+- form validartion
+- useRef hook 
+- firebase setup
+- deploying our app to production 
+- creat signupuser account 
+- impliment sign in user api 
+- created redux store with userSlice
+- Impliment sign out
+- Update profile
+- BugFix - Sign up user displayName and profilr pic update
+- BugFix - if the user is not logged in redirect / browse to Login Page and vice-versa
+- Unsubscribe to the onAuthStateChanged callback
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+first i have created a header which consist of a logo 
 
-### `npm run build`
+then i create login 
+ - give background image (property absolute)
+ - then i create a form (takes email and password)
+    -this from has dual functionality
+    -sign in for alreagy existing user 
+    -sign up for new user 
+    this is done by creating a state variable and giving me a toggle functionality
+- then i check for validation of email and password
+    - use rejex for validation {rejex code is in validate js file}
+    - take refrence using react hook useRef()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- we have also host our website on firebase
+    for that 
+    1 install firebase CLI - `npm install -g firebase-tools`
+    2 firebse login - `firebase login`
+    3 initilize firebse - `firebase init` then select hosting
+    4 deploy command - `firebase deploy`
+    
+- create a SignUp user account
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+during routing we have to dispatch on sign in , sign out , sign up (to avoide writing dispatch again and again we use onAuthStateChange) onAuthStateChange is a utility given by firebase
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+all firebase api (sign in, sign up,onAuthStateChange ) you will find on fire base website in authentication under web (manage user)
