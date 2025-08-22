@@ -9,3 +9,5 @@ export const API_OPTION ={
     accept: 'application/json',
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiY2Q5M2ZjNGNmNzkyZTM0MTI2NjA0MmM0NTlkNzkyMyIsIm5iZiI6MTc1NTcwNjkyNC42NDksInN1YiI6IjY4YTVmNjJjZmJkOTJjMWY2YjgzNGJhYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GFnG-tHMO_Hi9qbG3lgEQ694NVmhqqwOZjv3iGwxOiI'
   }}
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500"
